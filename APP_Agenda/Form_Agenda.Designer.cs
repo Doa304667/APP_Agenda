@@ -60,6 +60,7 @@
             this.textBoxNOME.Name = "textBoxNOME";
             this.textBoxNOME.Size = new System.Drawing.Size(250, 23);
             this.textBoxNOME.TabIndex = 0;
+            this.textBoxNOME.TextChanged += new System.EventHandler(this.textBoxNOME_TextChanged);
             // 
             // labelNOME
             // 
@@ -183,7 +184,6 @@
             // buttonSALVAR
             // 
             this.buttonSALVAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSALVAR.Image = global::APP_Agenda.Properties.Resources.btn_salvar;
             this.buttonSALVAR.Location = new System.Drawing.Point(42, 369);
             this.buttonSALVAR.Name = "buttonSALVAR";
             this.buttonSALVAR.Size = new System.Drawing.Size(97, 29);
@@ -196,7 +196,6 @@
             // buttonALTERAR
             // 
             this.buttonALTERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonALTERAR.Image = global::APP_Agenda.Properties.Resources.btn_alterar;
             this.buttonALTERAR.Location = new System.Drawing.Point(144, 369);
             this.buttonALTERAR.Name = "buttonALTERAR";
             this.buttonALTERAR.Size = new System.Drawing.Size(97, 29);
@@ -209,7 +208,6 @@
             // buttonAPAGAR
             // 
             this.buttonAPAGAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAPAGAR.Image = global::APP_Agenda.Properties.Resources.btn_apagar;
             this.buttonAPAGAR.Location = new System.Drawing.Point(245, 369);
             this.buttonAPAGAR.Name = "buttonAPAGAR";
             this.buttonAPAGAR.Size = new System.Drawing.Size(95, 29);
@@ -263,7 +261,6 @@
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::APP_Agenda.Properties.Resources.contexto;
             this.ClientSize = new System.Drawing.Size(742, 410);
             this.Controls.Add(this.buttonBUSCA);
             this.Controls.Add(this.label8);
@@ -289,6 +286,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Agenda";
             this.Text = "Agenda Pessoal";
+            this.Load += new System.EventHandler(this.Form_Agenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAGENDA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

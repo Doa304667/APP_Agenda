@@ -139,7 +139,6 @@
   <ItemGroup>
     <Content Include="agendamento.ico" />
     <Content Include="agendamento_desktop.ico" />
-    <None Include="Resources\contexto.jpg" />
     <None Include="Resources\btn_salvar.png" />
     <None Include="Resources\btn_alterar.png" />
     <None Include="Resources\btn_apagar.png" />

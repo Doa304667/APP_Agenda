@@ -235,5 +235,15 @@ namespace APP_Agenda
                 conexao.Close();
             }
         }
+
+        private void textBoxNOME_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Agenda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
